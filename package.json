@@ -1,0 +1,21 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "Shortens URL ",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "ok"
+  ],
+  "author": "Aaron Wong",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "crypto": "0.0.3",
+    "express": "^4.14.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-beta6"
+  }
+}

@@ -1,0 +1,10 @@
+html
+	head
+		title URL Shortener
+	body
+		h1 Enter the url you want to shorten here
+		// Accepts url
+		form(method='POST' action='/')
+			label(for='url') URL:
+			input(type='text',placeholder='URL', value='url', name='_url')
+			input(type='submit')
