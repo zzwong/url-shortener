@@ -1,0 +1,9 @@
+include shared/header.pug
+
+div(class="container")
+	div(class="col-md-8 col-md-offset-2")
+		h1 your shortened url is: 
+			- url = 'http://localhost:8080/' + hash
+			a(href=url) http://localhost:8080/#{hash}
+
+include shared/scripts.pug		

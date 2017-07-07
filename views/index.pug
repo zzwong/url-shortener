@@ -1,10 +1,18 @@
 html
 	head
 		title URL Shortener
-	body
-		h1 Enter the url you want to shorten here
-		// Accepts url
-		form(method='POST' action='/')
-			label(for='url') URL:
-			input(type='text',placeholder='URL', value='url', name='_url')
-			input(type='submit')
+		include shared/header.pug
+	body(data-spy="scroll",data-target=".scrollspy")
+		div(class="container")
+			div(class="col-md-8 col-md-offset-2")
+				h1 Enter the url you want to shorten here
+				// Accepts url
+				form(method='POST' action='/')
+					div(class='form-group')
+						label(for='url') URL:
+						input(class='form-control' type='text',placeholder='URL', value='', 	name='_url')
+						br
+						input(class='btn btn-submit' type='submit')
+
+			
+	include shared/scripts.pug
